@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Number Generator</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+    
+<body>
+    <div class="container">
+        <div id="generator-container">
+            <input type="button" value="Generate" id="btn-generate" onclick="generateNum()">
+            <br>
+            <!-- <div id="number">&nbsp;&nbsp;</div> -->
+            <div class="output">
+                <p id="generated"></p>
+                <p id="remaining"></p>
+            </div>
+        </div>
+        <div id="output-container">
+            <b>Generated Numbers:</b>
+            <ul id="lastnumber"></ul>
+        </div>
+        <div id="grid-container">
+        </div>
+        <div id="dialog" title="Basic dialog" style="display: none;">
+            <div id="number-box">&nbsp;&nbsp;</div>
+        </div>
+        <div id="housefull" title="Housefull" style="display: none;width: 100%;">
+            <div id="number-box-full">Housefull</div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./custom.js"></script></body>
+</body>
+
+</html>
